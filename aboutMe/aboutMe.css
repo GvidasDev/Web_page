@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+.main-layout{
+    display: flex;
+    background-color: #333;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-block{
+    flex: 40%;
+    height: 70%;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.links-block{
+    flex: 60%;
+    height: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.links{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .main-layout{   
+      flex-direction: column;
+    }
+}
